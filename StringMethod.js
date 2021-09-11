@@ -1,10 +1,13 @@
+//ref=https://www.w3schools.com/jsref/jsref_obj_string.asp
+
+
 //strings initialized
 var carcolor='blue';
 var carcolor1='Red';
 var carcolor2='Black';
 var carcolor3='Voilet';
 //-----------------------------------------variable value override-----------------------------------------
-
+console.log('--------------------------variables--------------------------');
 console.log(carcolor);
 var carcolor='OrangeX'; // will created carcolor and won't throw error
 console.log(carcolor);
@@ -18,6 +21,7 @@ console.log(carcolor);
 //PS: in javaScript initialization works with/without var keyword
 
 //-----------------------------------------length-----------------------------------------
+console.log('--------------------------length--------------------------');
 
 //we get length of string
 console.log(carcolor2.length);
@@ -30,6 +34,8 @@ console.log(carcolor.length);
 
 //-----------------------------------------indexOf-----------------------------------------
 //to use find like feature we will use .indexOf('character_you_want_to_search_for')
+console.log('--------------------------indexOf--------------------------');
+
 var sen='I love pizza, tf?! i myself don\'t know XD';
 console.log(sen.indexOf('pizza'));
 
@@ -40,6 +46,8 @@ console.log(sen.indexOf('i'));
 console.log(sen.indexOf('x'));
 
 //-----------------------------------------slice(substring)-----------------------------------------
+console.log('--------------------------slice--------------------------');
+
 var sent='Naya Word';
 console.log(sent);
 
@@ -57,3 +65,12 @@ console.log(sent.slice(100));
 
 // if start index is correct and end index is greated than length of string then method return value till last char of that String
 console.log(sent.slice(5,200));
+
+//-----------------------------------------replace-----------------------------------------
+console.log('--------------------------replace--------------------------');
+
+//replacing text
+console.log('We Welcome, User! '.replace('User','Arvind'));//string with updated value returened
+
+//replace text is not present in string
+console.log('We Welcome, ! '.replace('User','Arvind'));//same text returned
