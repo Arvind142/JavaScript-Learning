@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
+import AppHeader from './AppHeader';
+import AppContent from './AppContent';
+import AppFooter from './AppFooter';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+class App extends Component {
+  render() {
+    const footerPros = {
+      website: "https://www.google.com",
+      company: "Google",
+      year: "2020"
+    }
+    return (
+      <div className="app">
+        <AppHeader title="Addressbook App v1.0" subheading="Created by Arvind" />
+        <AppContent />
+        <AppFooter {...footerPros } />
+      </div>
+    );
+  }
+}
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// to send return element to DOM
+ReactDOM.render(<App />, document.getElementById('root'));
