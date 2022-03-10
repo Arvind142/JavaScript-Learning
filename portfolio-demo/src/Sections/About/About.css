@@ -1,0 +1,7 @@
+#about-image{
+    width: 200px;
+    height: 200px;
+}
+#about-image:hover{
+    background-color: aqua;
+}
