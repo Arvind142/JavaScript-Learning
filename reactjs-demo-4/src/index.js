@@ -5,11 +5,12 @@ import CounterApp from './CounterApp';
 
 // 
 class Index extends Component{
-    state = { showCounterApp: false}
+    state = { showCounterApp: false,
+    title:'Counter App'}
     render(){
         let output = null;
         if(this.state.showCounterApp===true){
-            output=<CounterApp />
+            output=<CounterApp title={this.state.title}/>
         }
         return(
             <div className='container'>
@@ -21,6 +22,16 @@ class Index extends Component{
                     this.setState({showCounterApp: !this.state.showCounterApp});
                 }}>
                 Hide/Show Counter App
+                </button>
+                <button className='btn btn-secondary' onClick={()=>{
+                    if(this.state.title==='Counter App'){
+                        this.setState({title:'Click counter App'});
+                    }
+                    else{
+                        this.setState({title:'Counter App'});
+                    }
+                }}>
+                Toogle the Title
                 </button>
                 {output}
             </div>

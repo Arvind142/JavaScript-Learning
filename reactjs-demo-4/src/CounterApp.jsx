@@ -13,7 +13,7 @@ class CounterApp extends Component {
         console.log('CounterApp - Render() called!');
         return (
             <div>
-                <h3>Counter App</h3>
+                <h3>{this.props.title}</h3>
                 <p>Counter : {this.state.count}</p>
                 <button className='btn btn-secondary' 
                 onClick={()=>{
