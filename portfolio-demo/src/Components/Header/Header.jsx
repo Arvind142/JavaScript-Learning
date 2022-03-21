@@ -1,13 +1,13 @@
 import { Component } from "react";
-
+import './Header.css'
+import Sharingan from "./Sharingan";
 class Header extends Component {
     render(props) {
         return (
-            <nav className="navbar navbar-light bg-light">
+            <nav className="navbar navbar-light nav-bar-element-header fixed-top">
                 <div className="container-fluid">
                     <a className="navbar-brand">
-                        <img src="favicon.ico" alt="" width="30" height="30" className="d-inline-block align-text-top" />
-                        &nbsp;|&nbsp;Arvind Choudhary
+                    <Sharingan path='images/Sharingan.png' /> &nbsp;|&nbsp;Arvind Choudhary
                     </a>
                 </div>
             </nav>

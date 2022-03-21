@@ -1,0 +1,22 @@
+/*  */
+.header-logo{
+    width: 40px;
+    height: 40px;
+}
+
+.header-logo:hover{
+    -webkit-animation: rotating 1s linear infinite;
+    -moz-animation: rotating 1s linear infinite;
+    -ms-animation: rotating 1s linear infinite;
+    -o-animation: rotating 1s linear infinite;
+    animation: rotating 1s linear infinite;
+}
+
+/* The animation code */
+@keyframes rotating {
+    0% {transform: rotate(0deg); }
+    25% {transform: rotate(-90deg); }
+    50% {transform: rotate(-180deg); }
+    75% {transform: rotate(-270deg); } 
+    100% {transform: rotate(-360deg); }     
+  }

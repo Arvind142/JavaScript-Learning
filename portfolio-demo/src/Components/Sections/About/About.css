@@ -1,4 +1,6 @@
 #about-image{
+    position: relative;
+    top:60px;
     width: 200px;
     height: 200px;
 }

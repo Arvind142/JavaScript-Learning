@@ -1,0 +1,5 @@
+.nav-bar-element-header{
+    background-color: #fffffff0;
+    backdrop-filter: blure(12px);
+    -webkit-backdrop-filter: blur(12px);
+}

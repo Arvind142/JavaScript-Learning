@@ -1,18 +1,13 @@
 import React, { Component, Fragment } from "react";
+import './About.css'
 
-class Experience extends Component {
-    getNoOfYearsOfExperience = () => {
-        let today = new Date();
-        let olday = new Date("23 July 2018");
-        let yrs = today.getFullYear() - olday.getFullYear();
-        let months = today.getMonth() - olday.getMonth();
-        if (months < 0) {
-            yrs--;
-        }
-        months = months < 0 ? 12 + months : months;
-        // console.log('yrs', yrs, 'months', months)
-        document.getElementById('NoOfYearsOfExperience').innerHTML=yrs + '.' + months;
-    };
+class About extends Component {
+    // changeImage = () => {
+    //     document.getElementById("about-image").src = "images/skill.png";
+    // };
+    // revertImage = () => {
+    //     document.getElementById("about-image").src = "images/about.png";
+    // };
 
     render() {
         return (
@@ -24,8 +19,13 @@ class Experience extends Component {
                         </nav>
                     </div>
                 </div>
-            </Fragment>
+                <img src="images/about.png" 
+                className="img-fluid rounded mx-auto d-block"
+                 alt="..." id="about-image">
+                </img>
+
+               </Fragment>
         );
     }
 }
-export default Experience;
+export default About;
